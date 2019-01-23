@@ -104,7 +104,7 @@ public class TrackController {
     @DeleteMapping("perform")
     public ResponseEntity<?> deleteTrack(@RequestParam int trackid) throws TrackNotFoundExeption {
         trackService.deletTrack(trackid);
-        ResponseEntity responseEntity=new ResponseEntity<String>("Success-Track deleted",HttpStatus.ACCEPTED);
+        ResponseEntity responseEntity= new ResponseEntity<String>("Success-Track deleted",HttpStatus.ACCEPTED);
         return responseEntity;
        /* try{
             trackService.deletTrack(trackid);
